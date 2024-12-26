@@ -22,8 +22,12 @@ public class Main {
 
         int[] array1 = {1, 0, 0, 0, 1, 1};
         for (int i = 0; i < array1.length; i++) {
-            if (array1[i] == 0) array1[i] = 1;
-            else array1[i] = 0;
+            if (array1[i] == 0) {
+                array1[i] = 1;
+            }
+            else {
+                array1[i] = 0;
+            }
             System.out.print(array1[i] + " ");
         }
         System.out.println("");
@@ -38,7 +42,9 @@ public class Main {
 
         int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < array3.length; i++) {
-            if (array3[i] < 6) array3[i] *= 2;
+            if (array3[i] < 6) {
+                array3[i] *= 2;
+            }
             System.out.print(array3[i] + " ");
         }
         System.out.println("");
@@ -56,7 +62,9 @@ public class Main {
         }
 
         int[] array5 = newArray(5, 10);
-        for (int i = 0; i < array5.length; i++) System.out.print(array5[i] + " ");
+        for (int i = 0; i < array5.length; i++) {
+            System.out.print(array5[i] + " ");
+        }
 
     }
 
@@ -93,9 +101,7 @@ public class Main {
     }
 
     public static boolean checkSumRange(int a, int b) {
-        if ((a + b >= 10) && (a + b <= 20))
-            return true;
-        return false;
+        return ((a + b >= 10) && (a + b <= 20));
     }
 
     public static void definitionSign(int a) {
@@ -103,7 +109,7 @@ public class Main {
     }
 
     public static boolean definitionSignBool(int a) {
-        return (a < 0) ? true : false;
+        return (a < 0);
     }
 
     public static void stringCount(String str, int count) {
@@ -113,14 +119,12 @@ public class Main {
     }
 
     public static boolean definitionYear(int year) {
-        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
-            return true;
-        return false;
+        return (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
     }
 
     public static int[] newArray(int len, int initialValue) {
         int[] array = new int[len];
-        for (int i = 0; i< len; i++) {
+        for (int i = 0; i < len; i++) {
             array[i] = initialValue;
         }
         return array;
