@@ -18,15 +18,15 @@ public class Main {
         System.out.println("Прямоугольник:");
         System.out.println("Периметр: " + rectangle.perimeter(5,10));
         System.out.println("Площадь: " + rectangle.square(5,10));
-        System.out.println("Цвет заливки: " + circle.getFillColor());
-        System.out.println("Цвет границы: " + circle.getBorderColor());
+        System.out.println("Цвет заливки: " + rectangle.getFillColor());
+        System.out.println("Цвет границы: " + rectangle.getBorderColor());
         System.out.println(" ");
 
         System.out.println("Треугольник:");
         System.out.println("Периметр: " + triangle.perimeter(5, 10, 5));
         System.out.println("Площадь: " + triangle.square(5, 10, 5));
-        System.out.println("Цвет заливки: " + circle.getFillColor());
-        System.out.println("Цвет границы: " + circle.getBorderColor());
+        System.out.println("Цвет заливки: " + triangle.getFillColor());
+        System.out.println("Цвет границы: " + triangle.getBorderColor());
         System.out.println(" ");
 
 
