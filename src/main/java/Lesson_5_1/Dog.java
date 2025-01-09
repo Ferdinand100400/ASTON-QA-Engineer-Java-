@@ -32,8 +32,7 @@ public class Dog extends Animal {
         }
     }
 
-    @Override
-    public int getCount() {
+    public static int getCount() {
         return count;
     }
 
