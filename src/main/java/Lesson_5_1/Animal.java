@@ -1,6 +1,6 @@
 package Lesson_5_1;
 
-public class Animal {
+public abstract class Animal {
 
     private static int count;
 
@@ -9,13 +9,9 @@ public class Animal {
     }
 
 
-    public void run(int length) {
+    public abstract void run(int length);
 
-    }
-
-    public void swim(int length) {
-
-    }
+    public abstract void swim(int length);
 
     public static int getCount() {
         return count;

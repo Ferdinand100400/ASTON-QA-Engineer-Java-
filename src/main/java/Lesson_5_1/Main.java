@@ -26,8 +26,8 @@ public class Main {
         cats[1].swim(20);
 
         System.out.println("Кол-во созданных животных: " + Animal.getCount());
-        System.out.println("Кол-во созданных котов: " + cats[0].getCount());
-        System.out.println("Кол-во созданных собак: " + dogs[0].getCount());
+        System.out.println("Кол-во созданных котов: " + Cat.getCount());
+        System.out.println("Кол-во созданных собак: " + Dog.getCount());
         System.out.println(" ");
 
 
@@ -35,8 +35,8 @@ public class Main {
         dishEat.deleteFood(cats[1].eat(5, dishEat.getCountFood()));
         dishEat.deleteFood(cats[2].eat(20, dishEat.getCountFood()));
         dishEat.deleteFood(cats[3].eat(14, dishEat.getCountFood()));
-        for (int i = 0; i < cats.length; i++) {
-            System.out.println(cats[i].getName() + " " + cats[i].isSatiety());
+        for (Cat cat : cats) {
+            System.out.println(cat.getName() + " " + cat.isSatiety());
         }
 
         System.out.println("Осталось еды: " + dishEat.getCountFood());
@@ -45,8 +45,8 @@ public class Main {
         System.out.println("Стало еды: "+ dishEat.getCountFood());
         System.out.println(" ");
         dishEat.deleteFood(cats[2].eat(20, dishEat.getCountFood()));
-        for (int i = 0; i < cats.length; i++) {
-            System.out.println(cats[i].getName() + " " + cats[i].isSatiety());
+        for (Cat cat : cats) {
+            System.out.println(cat.getName() + " " + cat.isSatiety());
         }
 
 

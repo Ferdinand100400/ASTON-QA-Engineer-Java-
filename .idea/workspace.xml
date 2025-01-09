@@ -7,8 +7,6 @@
     <list default="true" id="0ad804fc-97d4-4208-800e-6ab1dcfee03e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson_5_1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736437625601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Change">
+      <created>1736441208088</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736441208088</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
