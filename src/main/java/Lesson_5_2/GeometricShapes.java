@@ -5,7 +5,7 @@ import static java.lang.Math.sqrt;
 public class GeometricShapes implements Circle, Rectangle, Triangle {
     private String fillColor;
     private String borderColor;
-    final double pi = 3.14;
+    private static final double pi = 3.14;
 
     public GeometricShapes(String fillColor, String borderColor) {
         this.fillColor = fillColor;
