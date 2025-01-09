@@ -28,8 +28,7 @@ public class Cat extends Animal {
         System.out.println(this.name + " не умеет плавать");
     }
 
-    @Override
-    public int getCount() {
+    public static int getCount() {
         return count;
     }
 

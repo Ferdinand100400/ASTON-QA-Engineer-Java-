@@ -3,7 +3,6 @@ package Lesson_5_1;
 public class Main {
 
     public static void main(String[] args) {
-        Animal animal = new Animal();
         Dog[] dogs = new Dog[3];
         Cat[] cats = new Cat[4];
         DishFood dishEat = new DishFood(30);
@@ -26,7 +25,7 @@ public class Main {
         cats[1].swim(50);
         cats[1].swim(20);
 
-        System.out.println("Кол-во созданных животных: " + animal.getCount());
+        System.out.println("Кол-во созданных животных: " + Animal.getCount());
         System.out.println("Кол-во созданных котов: " + cats[0].getCount());
         System.out.println("Кол-во созданных собак: " + dogs[0].getCount());
         System.out.println(" ");

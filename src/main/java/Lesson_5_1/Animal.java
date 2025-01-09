@@ -17,7 +17,7 @@ public class Animal {
 
     }
 
-    public int getCount() {
+    public static int getCount() {
         return count;
     }
 
