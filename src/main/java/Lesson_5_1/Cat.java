@@ -40,12 +40,14 @@ public class Cat extends Animal {
         return satiety;
     }
 
-    public void eat(int countFoodNeed, DishFood dishFood) {
-        if (countFoodNeed <= dishFood.getCountFood()) {
+    public int eat(int countFoodNeed, int countFoodAvailable) {
+        if (countFoodNeed <= countFoodAvailable) {
             satiety = true;
-            dishFood.deleteFood(countFoodNeed);
-        } else {
+            return countFoodNeed;
+        }
+        else {
             satiety = false;
+            return 0;
         }
     }
 
