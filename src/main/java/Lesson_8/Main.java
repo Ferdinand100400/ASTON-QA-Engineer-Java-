@@ -1,9 +1,6 @@
 package Lesson_8;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -15,6 +12,7 @@ public class Main {
         list.add("Yes");
         list.add("No");
         list.add("Ball Ball");
+        list.add("No");
         list.add("Sun");
         list.add("day");
         list.add("fly");
@@ -26,11 +24,31 @@ public class Main {
         list.add("Dog");
         list.add("swim");
         list.add("table");
+        list.add("day");
+        list.add("day");
         list.add("swim");
 
-        Set<String> uniqueList = new HashSet<>();
-        uniqueList.addAll(list);
-        System.out.println(uniqueList);
+        HashMap<String, Integer> nonUniqueMap = new HashMap<>();
+        for (int i = 0; i < list.size(); i++) {
+            int count = 1;
+            for (int j = i + 1; j < list.size(); j++) {
+                if (list.get(i).equals(list.get(j))) {
+                    count++;
+                    list.remove(j);
+                    j--;
+                    nonUniqueMap.put(list.get(i), count);
+                }
+            }
+        }
+
+        for (Map.Entry<String, Integer> map : nonUniqueMap.entrySet()) {
+            list.remove(map.getKey());
+            System.out.println("Кол-во повторений слова " + map.getKey() + ": " + map.getValue());
+        }
+
+        System.out.print("Слова без повторений: ");
+        System.out.print(list);
+        System.out.println("\n");
 
 
         PhoneDirectory phoneDirectory = new PhoneDirectory();
